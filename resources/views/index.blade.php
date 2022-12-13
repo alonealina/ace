@@ -1,6 +1,6 @@
 @extends('layouts.app_fw')
 
-@section('content')
+@section('index_content')
 <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
 <div class="wrapper">
     <ul class="slider">

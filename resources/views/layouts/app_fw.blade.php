@@ -21,15 +21,29 @@
 
     @if(!$isMobile)
     <div id="registration_pc">
-        <body @if (\Route::currentRouteName() == 'fw.index') style="background-color: #000;" @endif>
+        <body>
         <div class="header_logo_div">
-            <a class="logo_a_sp" href="/">
+            <a class="logo_a_sp" href="{{ route('index') }}">
                 <img src="{{ asset('img/header_logo.png') }}" class="logo_img_sp" alt="">
             </a>
         </div>
+        <div class="left_menu_div">
+            <a href="{{ route('about') }}" class="left_menu @if (\Route::currentRouteName() == 'about') current @endif">About</a>
+            <a href="" class="left_menu @if (\Route::currentRouteName() == 'news')    current @endif">News</a>
+            <a href="" class="left_menu @if (\Route::currentRouteName() == 'service') current @endif">Service</a>
+            <a href="{{ route('recruit') }}" class="left_menu @if (\Route::currentRouteName() == 'recruit') current @endif">Recruit</a>
+            <a href="" class="left_menu @if (\Route::currentRouteName() == 'contact') current @endif">Contact</a>
+        </div>
+        @if (\Route::currentRouteName() != 'index')
+        <div class="page_name">
+            @yield('page_name')
+        </div>
+        @endif
 
-            @yield('content')
+        @yield('content')
+        @yield('index_content')
 
+        <footer>Copyright © Ace＆Co. All Rights Reserved.</footer>
 
         </body>
     </div>
@@ -37,7 +51,7 @@
     <div id="registration_sp">
         <body>
             <header class="header_sp" style="">
-                <a class="logo_a_sp" href="{{ route('fw.index') }}">
+                <a class="logo_a_sp" href="{{ route('index') }}">
                     <img src="{{ asset('img/fw_logo_sp.png') }}" class="logo_img_sp" alt="">
                 </a>
                 <div class="hamburger-menu">
