@@ -37,11 +37,11 @@ class AceController extends Controller
         $mail = $request->mail;
 
         Mail::send('mail', $data, function($message) use ($mail){
-            $message->to($mail, 'Test')->subject('【OTAKU】お問い合わせ完了のご案内');
+            $message->to($mail, 'Test')->subject('【Ace&Co.】お問い合わせ完了のご案内');
         });
 
         Mail::send('mail_admin', $data, function($message) {
-            $message->to('info@otaku4704.com', 'Test')->subject('【OTAKU】お問い合わせ受け付けのお知らせ');
+            $message->to('info@ace-co.press', 'Test')->subject('【Ace&Co.】お問い合わせ受け付けのお知らせ');
         });
 
         return redirect()->to('mail_comp');

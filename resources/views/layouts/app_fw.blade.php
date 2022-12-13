@@ -32,7 +32,7 @@
             <a href="" class="left_menu @if (\Route::currentRouteName() == 'news')    current @endif">News</a>
             <a href="" class="left_menu @if (\Route::currentRouteName() == 'service') current @endif">Service</a>
             <a href="{{ route('recruit') }}" class="left_menu @if (\Route::currentRouteName() == 'recruit') current @endif">Recruit</a>
-            <a href="" class="left_menu @if (\Route::currentRouteName() == 'contact') current @endif">Contact</a>
+            <a href="{{ route('contact') }}" class="left_menu @if (\Route::currentRouteName() == 'contact') current @endif">Contact</a>
         </div>
         @if (\Route::currentRouteName() != 'index')
         <div class="page_name">
