@@ -56,7 +56,7 @@
             <header class="header_sp" style="">
                 @if (\Route::currentRouteName() != 'index')
                 <a class="logo_a_sp" href="{{ route('index') }}">
-                    <img src="{{ asset('img/header_logo.png') }}" class="logo_img_sp" alt="">
+                    <img src="{{ asset('img/sp_top_logo.png') }}" class="logo_img_sp" alt="">
                 </a>
                 @endif
                 <div class="hamburger-menu"
