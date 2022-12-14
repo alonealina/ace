@@ -308,6 +308,11 @@ select {
     color: #FF3D3D;
 }
 
+.mail_comp_div {
+    margin: 100px;
+    font: normal normal 300 27px/34px serif;
+    text-align: center;
+}
 
 .service_menu {
     display: block;
