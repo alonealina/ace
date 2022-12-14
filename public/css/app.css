@@ -183,9 +183,9 @@ select {
     position: fixed;
     top: 40vh;
     z-index: 100;
-    width: 80vw;
+    width: 60vw;
     display: block;
-    margin: 10vw;
+    margin: 0 20vw;
     transition: 1s;
     opacity: 1;
 }
