@@ -54,10 +54,13 @@
     <div id="registration_sp">
         <body>
             <header class="header_sp" style="">
+                @if (\Route::currentRouteName() != 'index')
                 <a class="logo_a_sp" href="{{ route('index') }}">
                     <img src="{{ asset('img/header_logo.png') }}" class="logo_img_sp" alt="">
                 </a>
-                <div class="hamburger-menu">
+                @endif
+                <div class="hamburger-menu"
+                @if (\Route::currentRouteName() == 'index') style="padding-top: 30px;" @endif >
                     <input type="checkbox" id="menu-btn-check" onclick="clickMenuBtn()">
                     <label for="menu-btn-check" class="menu-btn" id="menu-btn"><span></span></label>
                     <div class="menu-content" id="menu-content">
@@ -89,7 +92,7 @@
                 @yield('header_page_sp')
             </div>
             @yield('content_sp')
-
+            <footer>Copyright © Ace＆Co. All Rights Reserved.</footer>
         </body>
     </div>
     @if (\Route::currentRouteName() != 'shop_list') <script src="{{ asset('js/locomotive-scroll.min.js') }}"></script> @endif

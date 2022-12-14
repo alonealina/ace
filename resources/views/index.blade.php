@@ -9,7 +9,6 @@
         <li class="slider-item slider-item03"></li>
     </ul>
 </div>
-
 @endsection
 
 
@@ -23,6 +22,8 @@
     </ul>
 </div>
 
-
+<a class="sp_top_logo" href="{{ route('index') }}" id="sp_top_logo">
+    <img src="{{ asset('img/sp_top_logo.png') }}" class="sp_top_img" alt="">
+</a>
 
 @endsection
