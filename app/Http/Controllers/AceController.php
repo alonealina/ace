@@ -17,6 +17,16 @@ class AceController extends Controller
         return view('about');
     }
 
+    public function news()
+    {
+        return view('news');
+    }
+
+    public function service()
+    {
+        return view('service');
+    }
+
     public function recruit()
     {
         return view('recruit');

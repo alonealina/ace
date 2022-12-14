@@ -41,6 +41,10 @@
     background-image: url(../img/recruit_bg.png);
 }
 
+.service_bg {
+    background-image: url(../img/service_bg.png);
+}
+
 
 
 *:focus {
@@ -89,6 +93,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
 
 
@@ -186,6 +191,7 @@ select {
     border-bottom: 1px solid #707070;
     position: fixed;
     width: 70%;
+    z-index: 100;
 }
 .content {
     color: #000;
@@ -298,6 +304,46 @@ select {
 }
 
 
+.service_menu {
+    display: block;
+    font: normal normal normal 50px/60px Microsoft Himalaya;
+    letter-spacing: 5px;
+    color: #545454;
+    margin-top: 30px;
+}
+
+.close_btn {
+    font: normal normal normal 12px/16px Futura;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #000000 ;
+    padding:3px 20px;
+    margin-left: 30px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.service_text {
+    font: normal normal 300 20px/25px Futura;
+    letter-spacing: 2px;
+    color: #000000;
+    margin:30px 0;
+}
+
+.service_img {
+    display: block;
+    width: 100%;
+}
+
+#service_menu {
+    z-index: 100;
+}
+
+#service1, #service2, #service3, #service4 {
+    z-index: 0;
+    display: none;
+}
 
 
 /*以下PC版ハンバーガーメニューについて*/

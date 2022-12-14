@@ -29,14 +29,17 @@
         </div>
         <div class="left_menu_div">
             <a href="{{ route('about') }}" class="left_menu @if (\Route::currentRouteName() == 'about') current @endif">About</a>
-            <a href="" class="left_menu @if (\Route::currentRouteName() == 'news')    current @endif">News</a>
-            <a href="" class="left_menu @if (\Route::currentRouteName() == 'service') current @endif">Service</a>
+            <a href="{{ route('news') }}" class="left_menu @if (\Route::currentRouteName() == 'news')    current @endif">News</a>
+            <a href="{{ route('service') }}" class="left_menu @if (\Route::currentRouteName() == 'service') current @endif">Service</a>
             <a href="{{ route('recruit') }}" class="left_menu @if (\Route::currentRouteName() == 'recruit') current @endif">Recruit</a>
             <a href="{{ route('contact') }}" class="left_menu @if (\Route::currentRouteName() == 'contact') current @endif">Contact</a>
         </div>
         @if (\Route::currentRouteName() != 'index')
         <div class="page_name">
-            @yield('page_name')
+            <span id="page_name">@yield('page_name')</span>
+            @if (\Route::currentRouteName() == 'service')
+            <a href="#" id="close_btn" class="close_btn" onclick="clickCloseBtn()">CLOSE</a>
+            @endif
         </div>
         @endif
 

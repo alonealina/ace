@@ -1,21 +1,3 @@
-let brand_hover = document.getElementById('brand_hover');
-let brand_menu = document.getElementById("brand_menu");
-
-brand_hover.addEventListener('mouseover', function() {
-    $('.brand_menu').css( 'display', 'block' );
-});
-
-brand_hover.addEventListener('mouseleave', function() {
-    $('.brand_menu').css( 'display', 'none' );
-});
-
-brand_menu.addEventListener('mouseover', function() {
-    $('.brand_menu').css( 'display', 'block' );
-});
-
-brand_menu.addEventListener('mouseleave', function() {
-    $('.brand_menu').css( 'display', 'none' );
-});
 
 
 function clickRegistButton() {

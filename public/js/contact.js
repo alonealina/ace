@@ -1,10 +1,3 @@
-window.onload = function() {
-    $('#header_logo').css( 'left', '0px' );
-    $('#header_menu').css( 'right', '0px' );
-
- }
-
-
 
 
 
