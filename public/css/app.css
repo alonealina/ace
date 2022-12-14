@@ -345,6 +345,44 @@ select {
     display: none;
 }
 
+#news_list {
+    z-index: 100;
+}
+
+#news_div {
+    z-index: 0;
+    display: none;
+}
+
+.news_column {
+    display: block;
+    padding:15px 0;
+    border-bottom: 1px solid #000;
+}
+
+.news_text {
+    padding:30px;
+    font: normal normal normal 18px/30px Bahnschrift;
+    letter-spacing: 0px;
+    color: #000000;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.news_title {
+    font: normal normal normal 20px/28px Bahnschrift;
+    margin-bottom: 30px;
+}
+.news_list_btn {
+    display: inline-block;
+    font: normal normal normal 20px/23px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #292929;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
 
 /*以下PC版ハンバーガーメニューについて*/
 
