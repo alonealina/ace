@@ -1,4 +1,17 @@
 
+function clickMenuBtn() {
+    $('#menu-content').css( 'display', 'block' );
+    $('#menu-btn').css( 'opacity', '0' );
+    setTimeout( ()=>{    $('#menu-btn').css( 'display', 'none' );} ,500);
+    setTimeout( ()=>{    $('#menu-content').css( 'opacity', '1' );} ,100);
+}
+
+function clickMenuBtn2() {
+    $('#menu-content').css( 'opacity', '0' );
+    $('#menu-btn').css( 'display', 'flex' );
+    setTimeout( ()=>{    $('#menu-btn').css( 'opacity', '1' );} ,500);
+    setTimeout( ()=>{    $('#menu-content').css( 'display', 'none' );} ,1000);
+}
 
 function clickRegistButton() {
     document.forms.regist_form.submit();

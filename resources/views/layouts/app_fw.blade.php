@@ -58,13 +58,11 @@
                     <img src="{{ asset('img/header_logo.png') }}" class="logo_img_sp" alt="">
                 </a>
                 <div class="hamburger-menu">
-                    <input type="checkbox" id="menu-btn-check">
-                    <label for="menu-btn-check" class="menu-btn" 
-                    @if (\Route::currentRouteName() != 'index')
-                    style="margin-top: 10px;"
-                    @endif
-                    ><span></span></label>
-                    <div class="menu-content">
+                    <input type="checkbox" id="menu-btn-check" onclick="clickMenuBtn()">
+                    <label for="menu-btn-check" class="menu-btn" id="menu-btn"><span></span></label>
+                    <div class="menu-content" id="menu-content">
+                        <input type="checkbox" id="menu-btn-check2" onclick="clickMenuBtn2()">
+                        <label for="menu-btn-check2" class="menu-btn2" id="menu-btn2"><span></span></label>
                         <ul>
                             <li>
                                 <a href="{{ route('about') }}" class="menu_content_sp">About</a>
