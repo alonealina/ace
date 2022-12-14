@@ -42,8 +42,16 @@
     background-image: url(../img/about_bg.png);
 }
 
+.about_bg_sp {
+    background-image: url(../img/about_bg_sp.png);
+}
+
 .recruit_bg {
     background-image: url(../img/recruit_bg.png);
+}
+
+.recruit_bg_sp {
+    background-image: url(../img/recruit_bg_sp.png);
 }
 
 .service_bg {
@@ -248,10 +256,27 @@ select {
     width: 70%;
     z-index: 1000;
 }
+.content_sp {
+    color: #000;
+    position: fixed;
+    height: calc(100vh - 110px);
+    overflow: scroll;
+    margin-top: 60px;
+    padding: 0 4%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    z-index: 1000;
+    font: normal normal 300 12px/16px Futura;
+    letter-spacing: 1.2px;
+}
+
 /*スクロールバー非表示（Chrome・Safari）*/
-.content::-webkit-scrollbar{
+.content::-webkit-scrollbar, .content_sp::-webkit-scrollbar{
     display:none;
 }
+
+
 
 .flex_div {
     margin-top: 50px;

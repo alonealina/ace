@@ -29,14 +29,25 @@ About
 
 @section('content_sp')
 
-<div class="wrapper">
-    <ul class="slider">
-        <li class="slider-item slider-item01_sp"></li>
-        <li class="slider-item slider-item02_sp"></li>
-        <li class="slider-item slider-item03_sp"></li>
-    </ul>
+<div class="content_sp">
+    <div class="page_title_sp">About</div>
+    Company Name<br>
+    株式会社Ace＆Co.<br><br>
+    Office<br>
+    〒542-0077<br>
+    大阪府大阪市中央区道頓堀1丁目東3-20<br>
+    EMPORIUM BLDG 3F<br><br>
+    President<br>
+    酒向智也<br><br>
+    E-mail<br>
+    info@ace-co.press<br><br>
+    Tel<br>
+    06-6484-3861<br><br>
+    Capital<br>
+    1,000万円<br><br>
+    Fields of Activities<br>
+    グラフィックデザイン/ウェブデザイン/メディアデザイン/写真・動画撮影、編集/SNSマネジメント
 </div>
-
-
+<div class="bg_div about_bg_sp"></div>
 
 @endsection
