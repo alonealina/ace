@@ -308,6 +308,13 @@ select {
     color: #000;
 }
 
+.contact_name_sp {
+    margin: 10px 0 7px;
+    font: normal normal normal 18px/22px Himalaya;
+    letter-spacing: 0px;
+    color: #000;
+}
+
 .form_text {
     width: 70%;
 }
@@ -346,23 +353,24 @@ select {
     color: #FF3D3D;
 }
 .error_message_sp {
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
-    font: normal normal normal 18px/23px Arial;
+    font: normal normal normal 12px/14px Arial;
     letter-spacing: 0px;
     color: #FF3D3D;
 }
 
 .page_title_sp {
     width: 100%;
-    padding-top: 30px;
-    font: normal normal normal 23px/40px Arial;
+    padding-top: 10px;
     border-bottom: 1px solid;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font: normal normal normal 26px/30px Himalaya;
+    color: #000;
 }
 .form_textarea_sp {
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 .form_text_sp {
     width: 100%;
@@ -372,6 +380,14 @@ select {
     margin: 100px;
     font: normal normal 300 27px/34px serif;
     text-align: center;
+}
+
+.mail_comp_div_sp {
+    font: normal normal normal 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .service_menu {

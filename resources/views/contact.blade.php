@@ -52,16 +52,16 @@ Contact
     <form name="mail_form" action="{{ route('mail_send') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="page_title_sp">CONTACT</div>
-        <div class="contact_name">Name</div>
+        <div class="contact_name_sp">Name</div>
         <input class="form_text_sp" placeholder="" name="name" type="text" id="name">
 
-        <div class="contact_name">Phone number</div>
+        <div class="contact_name_sp">Phone number</div>
         <input class="form_text_sp" placeholder="" name="tel" type="text" id="tel">
 
-        <div class="contact_name">E-mail</div>
+        <div class="contact_name_sp">E-mail</div>
         <input class="form_text_sp" placeholder="" name="mail" type="text" id="mail">
 
-        <div class="contact_name">Messsge</div>
+        <div class="contact_name_sp">Messsge</div>
         <textarea class="form_textarea_sp" name="content" id="content"></textarea>
         <div class="error_message_sp" id="error_message"></div>
         <div class="send_button" style="margin-top:20px;">
