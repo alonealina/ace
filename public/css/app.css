@@ -33,6 +33,11 @@
     src: url('../font/futura_medium_bt.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Himalaya";
+    src: url('../font/Microsoft-Himalaya.ttf') format('truetype');
+}
+
 .about_bg {
     background-image: url(../img/about_bg.png);
 }
@@ -155,7 +160,7 @@ select {
 .left_menu_div {
     padding: 250px 5vw;
     position: fixed;
-    font: normal normal normal 40px/40px Microsoft Himalaya;
+    font: normal normal normal 40px/40px Himalaya;
     letter-spacing: 4px;
     color: #707070;
     z-index: 100;
@@ -185,7 +190,7 @@ select {
 
 .page_name {
     margin:150px 8vw 0 22vw;
-    font: normal normal normal 85px/100px Microsoft Himalaya;
+    font: normal normal normal 85px/100px Himalaya;
     letter-spacing: 8.5px;
     color: #545454;
     border-bottom: 1px solid #707070;
@@ -306,7 +311,7 @@ select {
 
 .service_menu {
     display: block;
-    font: normal normal normal 50px/60px Microsoft Himalaya;
+    font: normal normal normal 50px/60px Himalaya;
     letter-spacing: 5px;
     color: #545454;
     margin-top: 30px;
