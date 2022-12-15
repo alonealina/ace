@@ -24,6 +24,12 @@ function clickRegistButton() {
     document.forms.regist_form.submit();
 }
 
+function clickEditButton() {
+    document.forms.edit_form.submit();
+  }
+    
+  
+
 function fileCheckMain(){
 
     let file_btn = $("#file_btn_main");

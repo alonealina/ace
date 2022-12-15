@@ -42,7 +42,7 @@
                     <option value="1" @if(old('release') == 1) selected @endif >公開</option>
                     <option value="none" 
                         @if(old('release') == 'none') selected 
-                        @elseif(empty(old('release')) && $news->release_fle != 1) selected @endif >非公開</option>
+                        @elseif(empty(old('release')) && $news->release_flg != 1) selected @endif >非公開</option>
                 </select>
             </div>
         </div>
