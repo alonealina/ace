@@ -27,6 +27,26 @@ class AceController extends Controller
         return view('service');
     }
 
+    public function graphic()
+    {
+        return view('graphic');
+    }
+
+    public function web()
+    {
+        return view('web');
+    }
+
+    public function media()
+    {
+        return view('media');
+    }
+
+    public function photo()
+    {
+        return view('photo');
+    }
+
     public function recruit()
     {
         return view('recruit');

@@ -15,6 +15,11 @@ function clickMenuBtn2() {
     setTimeout( ()=>{    $('#menu-content').css( 'display', 'none' );} ,1000);
 }
 
+function clickService() {
+    $('#service_list').css( 'display', 'block' );
+}
+
+
 function clickRegistButton() {
     document.forms.regist_form.submit();
 }

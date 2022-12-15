@@ -58,6 +58,10 @@
     background-image: url(../img/service_bg.png);
 }
 
+.service_bg_sp {
+    background-image: url(../img/service_bg_sp.png);
+}
+
 
 
 *:focus {
@@ -277,7 +281,6 @@ select {
 }
 
 
-
 .flex_div {
     margin-top: 50px;
     width: 100%;
@@ -447,6 +450,11 @@ select {
     width: 100%;
 }
 
+.service_img_sp {
+    width: 100%;
+    margin-top: 50px;
+}
+
 #service_menu {
     z-index: 100;
 }
@@ -584,7 +592,7 @@ select {
         z-index: 1000;
         background-color: rgba(255, 255, 255, 0.80);
         transition: all 0.5s;/*アニメーション設定*/
-        padding-top: 17vh;
+        padding-top: 10vh;
         opacity: 0;
         display: none;
         font: normal normal normal 25px/30px Himalaya;
@@ -597,7 +605,7 @@ select {
         padding: 0 10px;
         margin: 0 20px;
         overflow: scroll;
-        height: 400px;
+        height: 70vh;
         direction: rtl;
     }
     .menu-content ul li {
@@ -621,6 +629,19 @@ select {
         padding: 2vh 0;
     }
 
+    .service_column_sp {
+        font: normal normal normal 20px/24px Himalaya;
+        display: block;
+        padding: 6px 0;
+    }
+
+    .service_list {
+        margin: 1vh 15%;
+        padding: 10px 0;
+        border: 0.5px solid #781543;
+        display: none;
+    }
+    
     .header_icon_list {
         width: 220px;
         margin-right: 0px;

@@ -74,7 +74,13 @@
                                 <a href="{{ route('news') }}" class="menu_content_sp">News</a>
                             </li>
                             <li>
-                            <a href="{{ route('service') }}" class="menu_content_sp">Service</a>
+                            <a href="#" class="menu_content_sp" onclick="clickService()">Service</a>
+                            </li>
+                            <li class="service_list" id="service_list">
+                                <a href="{{ route('graphic') }}" class="service_column_sp">Graphic Design</a>
+                                <a href="{{ route('web') }}" class="service_column_sp">Web Design</a>
+                                <a href="{{ route('media') }}" class="service_column_sp">Media Design</a>
+                                <a href="{{ route('photo') }}" class="service_column_sp">Photo + Movie</a>
                             </li>
                             <li>
                             <a href="{{ route('recruit') }}" class="menu_content_sp">Recruit</a>
