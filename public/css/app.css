@@ -263,7 +263,7 @@ select {
 .content_sp {
     color: #000;
     position: fixed;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 200px);
     overflow: scroll;
     margin-top: 60px;
     padding: 0 4%;
