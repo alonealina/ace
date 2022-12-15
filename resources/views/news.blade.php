@@ -10,7 +10,7 @@ NEWS
 <div class="content" style="padding-top:30px">
     <div id="news_list">
         @foreach($news_list as $news)
-        <a href="#" onclick="clickNews({{ $news->id }})" class="news_column">{{ $news->notice_date }}　{{ $news->title }}</a>
+        <a href="#" onclick="clickNews({{ $news->id }})" class="news_column"><span class="notice_date_span">{{ $news->notice_date }}</span>　{{ $news->title }}</a>
         @endforeach
     </div>
 
@@ -35,7 +35,7 @@ NEWS
     <div class="page_title_sp">NEWS</div>
     <div id="news_list">
         @foreach($news_list as $news)
-        <a href="#" onclick="clickNewsSp({{ $news->id }})" class="news_column">{{ $news->notice_date }}　{{ $news->title }}</a>
+        <a href="#" onclick="clickNewsSp({{ $news->id }})" class="news_column"><span class="notice_date_span">{{ $news->notice_date }}</span>　{{ $news->title }}</a>
         @endforeach
     </div>
 
