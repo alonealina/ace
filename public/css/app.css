@@ -527,7 +527,9 @@ select {
 }
 
 .notice_date_span {
-
+    width: 100px;
+    display: inline-block;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
