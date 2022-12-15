@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Models\News;
 
 class AceController extends Controller
 {
@@ -19,7 +20,10 @@ class AceController extends Controller
 
     public function news()
     {
-        return view('news');
+        $news_list = News::get();
+        return view('news', [
+            'news_list' => $news_list,
+        ]);
     }
 
     public function service()

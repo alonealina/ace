@@ -6,7 +6,7 @@ try {
     $qry->execute();
     $html = '';
     foreach($qry->fetchAll() as $row){
-        $html .= '<div class="news_title"><span id="news_date">'. $row["notice_date"] .'</span><br><span id="news_title">'. $row["title"] .'</span></div>
+        $html .= '<div class="news_title_sp"><span id="news_date">'. $row["notice_date"] .'</span><br><span id="news_title">'. $row["title"] .'</span></div>
         <div id="news_content">'. $row["content"] .'</div>';
     }
     echo json_encode($html);
