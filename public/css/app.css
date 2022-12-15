@@ -228,7 +228,7 @@ select {
 
 .bg_div {
     width: 100%;
-    position:relative;
+    position:fixed;
     z-index: 1;
     height: 100vh;
     background-repeat: no-repeat;
